@@ -90,3 +90,147 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.page2 {
+	font-size: 45px;
+	font-weight: bold;
+	font-family: "Georgia", sans-serif;
+	max-width: 498px;
+	color:#27272A;
+	margin-top: 125px;
+}
+
+.Ellipse {
+	margin-top:50px;
+	flex: 0 0 auto;
+}
+
+.Dalee{
+		width: 184px;
+		height: 50px;
+		border-radius: 50px;
+		padding: 14px 10px;
+		background-color: #7E3AF2;
+		border-color: black;
+		color: white;
+		font-weight:bold;
+		font-size: 15px;
+		cursor: pointer;
+		background-image: url(../img/Samoletik.png);
+		background-repeat: no-repeat;
+		background-position:150px 14.5px;
+		margin-top:-300px;
+		margin-left:920px;
+	}
+	
+	.container3 {
+		display: flex;
+		align-items: flex-start; 
+		gap: 20px;
+		max-width: 1760px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px;
+		
+	  }
+
+	.opis {
+		font-size: 20px;
+		max-width: 445px;
+		color: #27272A;
+		flex: 1;
+		margin-left: 500px;
+		margin-top: 135px
+	}
+
+	.image-row img {
+		display: inline-block;
+		margin-right: 10px;
+		vertical-align: top;
+	  }
+	  
+	  .image-row img:last-child {
+		margin-right: 0;
+	  }
+
+	  .image-container {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  .image-item {
+		display: flex;
+		align-items: center;
+		width: 25px; 
+		margin: 40px; 
+		box-sizing: border-box;
+	  }
+	  
+	  .image-item img {
+		width: 60px;
+		height: 60px; 
+		margin-right: 10px; 
+	  }
+	  
+	  .description {
+		text-align: left;
+		font-weight: bold;
+		font-family: "Montserrat", sans-serif;
+	  }
+
+	  .raz{
+		list-style: none;
+	  }
+
+	  .contr {
+		display: flex;
+		justify-content: space-between; /* Распределяет пространство между колонками */
+		gap: 20px; /* Отступ между колонками */
+		max-width: 1760px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px;
+		
+	  }
+	  
+	  .left-column, .right-column {
+		width: 45%; /* Ширина каждой колонки */
+		box-sizing: border-box; /* Отступы включаются в ширину */
+	  }
+	  
+	  .raz {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	  }
+	  
+	  .image-item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	  }
+	  
+	  .image-item img {
+		width: 50px;
+		height: 50px;
+	  }
+
+	  .texss{
+		text-align: center;
+	  }
+
+	  .cont2{
+		max-width: 1760px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0px;
+	}
+	.back {
+		padding-top: 175px;
+		min-height: 895px;
+		background-image: url(../img/fon.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
