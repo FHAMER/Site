@@ -1,78 +1,104 @@
 <!DOCTYPE html>
-<html Lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style\main.css">
-        <title>CrimeaDigital</title>
-
-    </head>
-    <body>
-        <header class="header_top">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>CrimeaDigital</title>
+</head>
+<body>
+    <header>
+        <div class="header_top">
             <div class="container2">
-            <a href="">
-                <img src="/img/Logo.png" class="logo">
-            </a>
-            
-            <ul>
-                <li><a href="">Главная  </a></li>
-                <li><a href="">Обо мне  </a></li>
-                <li><a href="">Регистрация  </a></li>
-            </ul>
+                <a href="#">
+                    <img src="/img/Logo.png" alt="Логотип" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Обо мне</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        </header>
-        <!-- Шапка -->
-        <header class="header">
+        <div class="header">
             <div class="container">
                 <h1>Привет, я Саша</h1>
-                <img src="/img/Line 1.png">
+                <img src="/img/Line 1.png" alt="Декоративная линия">
                 <p>Я студент первого курса в Севастопольском Государственном Университете.</p>
                 <button>Регистрация</button>
             </div>
-        </header>
-        <div class="container"><h1 class="page2">Обо мне</h1></div>
-        <div class = "container3">
-            <img src="/img/Ellipse.png" class="Ellipse" >
-            <p class="opis">Литвинюк Александр - студент первого курса, института ИИТ. Программа: Программная инженерия: Цифровые технологии в аграрном деле</p>
         </div>
-        <button class="Dalee">Далее</button>
-        <div class="container">
-        <h2 class="texss">Интересы и хобби</h2>
-        <div class="contr">
-            <ul class="raz left-column">
-              <!-- Список 1 -->
-              <li class="image-item">
-                <img src="/img/icon.png" alt="Изображение 1">
-                <span class="description">Trap/Lyric</span>
-              </li>
-              <li class="image-item">
-                <img src="/img/icon3.png" alt="Изображение 2">
-                <span class="description">Винсент Ван Гог</span>
-              </li>
-              <li class="image-item">
-                <img src="/img/icon2.png" alt="Изображение 3">
-                <span class="description">Portraits</span>
-              </li>
-            </ul>
-            <ul class="raz right-column">
-              <!-- Список 2 -->
-              <li class="image-item">
-                <span class="description">Студент первого курса</span>
-              </li>
-              <li class="image-item">
-                <span class="description">Школьные мероприятия</span>
-              </li>
-              <li class="image-item">
-                <span class="description">Танцор</span>
-              </li>
-            </ul>
-          </div>
-        <div class="back">
-<div class="cont2">
-</div>
-</div>
-        <!-- Самая нижняя вкладка -->
+    </header>
+
+    <main>
+        <section class="about-me">
+            <div class="container">
+                <h1 class="page2">Обо мне</h1>
+            </div>
+            <div class="container3">
+                <img src="/img/Ellipse.png" alt="Эллипс" class="Ellipse">
+                <p class="opis">Литвинюк Александр - студент первого курса, института ИИТ. Программа: Программная инженерия: Цифровые технологии в аграрном деле</p>
+            </div>
+            <button class="Dalee" >Далее</button>
+        </section>
+
+        <section class="interests">
+            <div class="container">
+                <h2 class="texss">Интересы и хобби</h2>
+                <div class="contr">
+                    <ul class="raz left-column">
+                        <li class="image-item">
+                            <img src="/img/icon.png" alt="Изображение 1">
+                            <span class="description">Trap/Lyric</span>
+                        </li>
+                        <li class="image-item">
+                            <img src="/img/icon3.png" alt="Изображение 2">
+                            <span class="description">Винсент Ван Гог</span>
+                        </li>
+                        <li class="image-item">
+                            <img src="/img/icon2.png" alt="Изображение 3">
+                            <span class="description">Portraits</span>
+                        </li>
+                    </ul>
+                    <ul class="raz right-column">
+                        <li class="image-item">
+                            <span class="description">Студент первого курса</span>
+                        </li>
+                        <li class="image-item">
+                            <span class="description">Школьные мероприятия</span>
+                        </li>
+                        <li class="image-item">
+                            <span class="description">Танцор</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back">
+                <div class="cont2"><div class="registration-form">
+                  <h2>Расскажите о себе на нашем сайте</h2>
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Полное имя *</label>
+                      <input type="text" id="name" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Ваша почта *</label>
+                      <input type="email" id="email" placeholder="example@email.com">
+                      <span class="error-message">Пожалуйста, заполните это поле</span> </div>
+                    <div class="form-group">
+                      <label for="description">Расскажите о себе</label>
+                      <textarea id="description" placeholder="Ваш текст"></textarea>
+                    </div>
+                    <button type="submit">Далее ></button>
+                  </form>
+                </div></div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <p>© 2024 LAlexS</p>

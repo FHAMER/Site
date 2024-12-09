@@ -234,3 +234,70 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+	.registration-form {
+		background-color: white;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center; /* Центрируем заголовок */
+		margin: 50px auto; /* Центрируем форму на странице */
+		max-width: 400px; /* Ограничиваем максимальную ширину формы */
+	}
+	
+	.registration-form h2 {
+		margin-bottom: 20px;
+		color: #333;
+	}
+	
+	.form-group {
+		margin-bottom: 15px;
+	}
+	
+	.form-group label {
+		display: block; /* Делаем label блочным элементом */
+		margin-bottom: 5px;
+		color: #555;
+	}
+	
+	.form-group input,
+	.form-group textarea {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+	}
+	
+	.form-group textarea {
+		height: 100px;
+		resize: vertical;
+	}
+	
+	.error-message {
+		color: red;
+		font-size: 12px;
+		margin-top: 5px;
+		display: none; /* Скрываем сообщение об ошибке по умолчанию */
+	}
+	
+	
+	.registration-form button[type="submit"] {
+		background-color: #7E3AF2; /* Цвет из вашей палитры */
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		width: 100%;
+		font-weight: bold;
+	}
+	
+	.registration-form button[type="submit"]:hover {
+		opacity: 0.8;
+	}
+	
+	/* Реакция на ошибки */
+	.form-group input:invalid + .error-message {
+	  display: block;
+	}
