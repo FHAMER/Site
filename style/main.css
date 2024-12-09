@@ -301,3 +301,23 @@ body {
 	.form-group input:invalid + .error-message {
 	  display: block;
 	}
+	.right-column .image-item::after {
+		content: "2020-2024"; /* Пример даты. Замените на ваши даты. */
+		display: inline-block;
+		margin-left: 10px; /* Отступ от текста */
+		color: #888; /* Цвет даты */
+		font-size: 14px; /* Размер текста даты */
+		font-style: italic; /* Курсив для даты */
+	  }
+	  
+	  .right-column .image-item:nth-child(1)::after {
+		content: "2024-сейчас";
+	  }
+	  
+	  .right-column .image-item:nth-child(2)::after {
+		content: "2013-2024";
+	  }
+	  
+	  .right-column .image-item:nth-child(3)::after {
+		content: "2017-2024";
+	  }
