@@ -184,8 +184,8 @@ body {
 
 	  .contr {
 		display: flex;
-		justify-content: space-between; /* Распределяет пространство между колонками */
-		gap: 20px; /* Отступ между колонками */
+		justify-content: space-between;
+		gap: 20px; 
 		max-width: 1760px;
 		width: 100%;
 		margin: 0 auto;
@@ -194,8 +194,8 @@ body {
 	  }
 	  
 	  .left-column, .right-column {
-		width: 45%; /* Ширина каждой колонки */
-		box-sizing: border-box; /* Отступы включаются в ширину */
+		width: 45%;
+		box-sizing: border-box; 
 	  }
 	  
 	  .raz {
@@ -240,9 +240,9 @@ body {
 		padding: 30px;
 		border-radius: 10px;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		text-align: center; /* Центрируем заголовок */
-		margin: 50px auto; /* Центрируем форму на странице */
-		max-width: 400px; /* Ограничиваем максимальную ширину формы */
+		text-align: center; 
+		margin: 50px auto;
+		max-width: 400px; 
 	}
 	
 	.registration-form h2 {
@@ -255,7 +255,7 @@ body {
 	}
 	
 	.form-group label {
-		display: block; /* Делаем label блочным элементом */
+		display: block; 
 		margin-bottom: 5px;
 		color: #555;
 	}
@@ -278,12 +278,12 @@ body {
 		color: red;
 		font-size: 12px;
 		margin-top: 5px;
-		display: none; /* Скрываем сообщение об ошибке по умолчанию */
+		display: none; 
 	}
 	
 	
 	.registration-form button[type="submit"] {
-		background-color: #7E3AF2; /* Цвет из вашей палитры */
+		background-color: #7E3AF2;
 		color: white;
 		padding: 12px 20px;
 		border: none;
@@ -297,17 +297,16 @@ body {
 		opacity: 0.8;
 	}
 	
-	/* Реакция на ошибки */
 	.form-group input:invalid + .error-message {
 	  display: block;
 	}
 	.right-column .image-item::after {
-		content: "2020-2024"; /* Пример даты. Замените на ваши даты. */
+		content: "2020-2024"; 
 		display: inline-block;
-		margin-left: 10px; /* Отступ от текста */
-		color: #888; /* Цвет даты */
-		font-size: 14px; /* Размер текста даты */
-		font-style: italic; /* Курсив для даты */
+		margin-left: 10px; 
+		color: #888; 
+		font-size: 14px; 
+		font-style: italic; 
 	  }
 	  
 	  .right-column .image-item:nth-child(1)::after {
