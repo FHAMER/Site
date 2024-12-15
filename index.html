@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <title>CrimeaDigital</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header_top">
             <div class="container2">
-                <a href="#">
+                <a href="#" onclick="location.reload()">
                     <img src="/img/Logo.png" alt="Логотип" class="logo">
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Регистрация</a></li>
-                    </ul>
+                        <li><a href="#" onclick="location.reload();">Главная</a></li>
+                        <li><a href="#about-me">Обо мне</a></li>
+                        <li><a href="#registration-form-section">Регистрация</a></li>
+                      </ul>
                 </nav>
             </div>
         </div>
@@ -28,13 +29,13 @@
                 <h1>Привет, я Саша</h1>
                 <img src="/img/Line 1.png" alt="Декоративная линия">
                 <p>Я студент первого курса в Севастопольском Государственном Университете.</p>
-                <button>Регистрация</button>
+                <button id="reg-button">Регистрация</button>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="container">
                 <h1 class="page2">Обо мне</h1>
             </div>
@@ -42,7 +43,7 @@
                 <img src="/img/Ellipse.png" alt="Эллипс" class="Ellipse">
                 <p class="opis">Литвинюк Александр - студент первого курса, института ИИТ. Программа: Программная инженерия: Цифровые технологии в аграрном деле</p>
             </div>
-            <button class="Dalee" >Далее</button>
+            <button class="Dalee" id="dalee-button">Далее</button>
         </section>
 
         <section class="interests">
@@ -76,32 +77,43 @@
                     </ul>
                 </div>
             </div>
-            <div class="back">
-                <div class="cont2"><div class="registration-form">
-                  <h2>Расскажите о себе на нашем сайте</h2>
-                  <form>
-                    <div class="form-group">
-                      <label for="name">Полное имя *</label>
-                      <input type="text" id="name" placeholder="Имя Фамилия">
+            <div class="back" id="registration-form-section">
+                <div class="cont2">
+                    <div class="registration-form">
+                        <h2>Расскажите о себе на нашем сайте</h2>
+                        <form id="registration-form" action="" >
+                            <div class="form-group">
+                                <label for="name">Полное имя *</label>
+                                <input type="text" id="name" placeholder="Имя Фамилия">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваша почта *</label>
+                                <input type="email" id="email" placeholder="example@email.com">
+                                <span class="error-message" id="email-error">Пожалуйста, заполните это поле</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Расскажите о себе</label>
+                                <textarea id="description" placeholder="Ваш текст"></textarea>
+                            </div>
+                            <button type="button" id="form-submit" >Отправить</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                      <label for="email">Ваша почта *</label>
-                      <input type="email" id="email" placeholder="example@email.com">
-                      <span class="error-message">Пожалуйста, заполните это поле</span> </div>
-                    <div class="form-group">
-                      <label for="description">Расскажите о себе</label>
-                      <textarea id="description" placeholder="Ваш текст"></textarea>
-                    </div>
-                    <button type="submit">Далее ></button>
-                  </form>
-                </div></div>
-            </div>
+                </div>
         </section>
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+              <p>Вы точно хотите отправить?</p>
+              <div class="modal-buttons">
+                <button id="confirmButton">Подтвердить</button>
+                <button id="cancelButton">Отмена</button>
+              </div>
+            </div>
+          </div>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>© 2024 LAlexS</p>
+            <p><span class="blast">© </span><span class="blast">2024 </span><span class="blast">LAlexS</span>
         </div>
     </footer>
 </body>

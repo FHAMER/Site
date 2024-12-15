@@ -1,322 +1,384 @@
-html {
-	box-sizing: border-box;
-}
-*, *::before, *::after {
-	box-sizing: inherit;
-}
-body {
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-}
-.container{
-	max-width: 1760px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-.header {
-	padding-top: 175px;
-	min-height: 895px;
-	background-image: url(../img/header.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.header h1 {
-	font-size: 75px;
-	font-weight: bold;
-	font-family: "Georgia", sans-serif;
-	max-width: 498px;
-	color:#27272A;
-}
+:root {
+	--primary-color: #7E3AF2;
+	--text-color: #27272A;
+	--secondary-text-color: #696969;
+	--white: #fff;
 
-.header p {
-	font-size: 20px;
-	max-width: 445px;
-	color: #696969;
-	height: 114px;
-	margin-bottom: 60px;
-	margin-top:50px;
-}
+	--main-font: "Montserrat", sans-serif;
+	--header-font: "Georgia", serif;
 
-.header button {
-	width: 184px;
-	height: 50px;
-	border-radius: 50px;
-	padding: 14px 10px;
-	background-color: #7E3AF2;
-	border-color: black;
-	color: white;
-	font-weight:bold;
-	font-size: 15px;
-	cursor: pointer;
-	background-image: url(../img/Samoletik.png);
-	background-repeat: no-repeat;
-	background-position:150px 14.5px;
-}
+	--padding-container: 0 10px;
+  }
+  
+  html {
+	  box-sizing: border-box;
+  }
+  *, *::before, *::after {
+	  box-sizing: inherit;
+  }
+  body {
+	  margin: 0;
+	  font-family: var(--main-font);
+  }
+  .container {
+	  max-width: 1760px;
+	  width: 100%;
+	  margin: 0 auto;
+	  padding: var(--padding-container);
+  }
+  
 
+  .header {
+	  padding-top: 175px;
+	  min-height: 895px;
+	  background-image: url(../img/header.png);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+  }
+  .header h1 {
+	  font-size: 75px;
+	  font-weight: bold;
+	  font-family: var(--header-font); 
+	  max-width: 498px;
+	  color:var(--text-color); 
+  }
+  
+  .header p {
+	  font-size: 20px;
+	  max-width: 445px;
+	  color: var(--secondary-text-color); 
+	  height: 114px;
+	  margin-bottom: 60px;
+	  margin-top:50px;
+  }
+  
+  .header button {
+	  width: 184px;
+	  height: 50px;
+	  border-radius: 50px;
+	  padding: 14px 10px;
+	  background-color: var(--primary-color);
+	  border-color: black;
+	  color: var(--white);
+	  font-weight:bold;
+	  font-size: 15px;
+	  cursor: pointer;
+	  background-image: url(../img/Samoletik.png);
+	  background-repeat: no-repeat;
+	  background-position:150px 14.5px;
+  }
+  
+  
+  .header_top ul {
+	  list-style: none;
+	  display: flex;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  
+  .header_top ul li a{
+	  color: var(--secondary-text-color); 
+	  font-size:17px;
+	  text-decoration: none;
+	  margin-right: 15px;
+  }
+  
+  .header_top ul li a:hover{
+	  opacity: 0.8;
+  }
+  
+  .header_top ul li:last-child {
+	  margin-right: 0;
+  }
+  
+  .container2 {
+	  max-width: 1760px;
+	  width: 100%;
+	  margin: 0 auto;
+	  padding: var(--padding-container);
+  }
+  
+  .header_top .container2 {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
 
-.header_top ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0; 
-}
+  
 
-
-.header_top ul li a{
-	color: #696969;
-	font-size:17px;
-	text-decoration: none;
-	margin-right: 15px;
-}
-
-.header_top ul li a:hover{
-	opacity: 0.8;
-}
-
-.header_top ul li:last-child {
-    margin-right: 0;
-}
-
-.container2{
-	max-width: 1760px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-.header_top .container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page2 {
-	font-size: 45px;
-	font-weight: bold;
-	font-family: "Georgia", sans-serif;
-	max-width: 498px;
-	color:#27272A;
-	margin-top: 125px;
-}
-
-.Ellipse {
-	margin-top:50px;
-	flex: 0 0 auto;
-}
-
-.Dalee{
-		width: 184px;
-		height: 50px;
-		border-radius: 50px;
-		padding: 14px 10px;
-		background-color: #7E3AF2;
-		border-color: black;
-		color: white;
-		font-weight:bold;
-		font-size: 15px;
-		cursor: pointer;
-		background-image: url(../img/Samoletik.png);
-		background-repeat: no-repeat;
-		background-position:150px 14.5px;
-		margin-top:-300px;
-		margin-left:920px;
-	}
-	
-	.container3 {
-		display: flex;
-		align-items: flex-start; 
-		gap: 20px;
-		max-width: 1760px;
-		width: 100%;
-		margin: 0 auto;
-		padding: 0 10px;
+  .page2 {
+	  font-size: 45px;
+	  font-weight: bold;
+	  font-family: var(--header-font); 
+	  max-width: 498px;
+	  color: var(--text-color);  
+	  margin-top: 125px;
+  }
+  
+  .Ellipse {
+	  margin-top:50px;
+	  flex: 0 0 auto;
+  }
+  
+  .Dalee {
+		  width: 184px;
+		  height: 50px;
+		  border-radius: 50px;
+		  padding: 14px 10px;
+		  background-color: var(--primary-color);
+		  border-color: black;
+		  color: var(--white);
+		  font-weight:bold;
+		  font-size: 15px;
+		  cursor: pointer;
+		  background-image: url(../img/Samoletik.png);
+		  background-repeat: no-repeat;
+		  background-position:150px 14.5px;
+		  margin-top:-300px;
+		  margin-left:920px;
+	  }
+	  
+	  .container3 {
+		  display: flex;
+		  align-items: flex-start; 
+		  gap: 20px;
+		  max-width: 1760px;
+		  width: 100%;
+		  margin: 0 auto;
+		  padding: var(--padding-container);
+	  }
+  
+	  .opis {
+		  font-size: 20px;
+		  max-width: 445px;
+		  color: var(--text-color);
+		  flex: 1;
+		  margin-left: 500px;
+		  margin-top: 135px
+	  }
+  
+	  .image-row img {
+		  display: inline-block;
+		  margin-right: 10px;
+		  vertical-align: top;
+	  }
 		
-	  }
-
-	.opis {
-		font-size: 20px;
-		max-width: 445px;
-		color: #27272A;
-		flex: 1;
-		margin-left: 500px;
-		margin-top: 135px
-	}
-
-	.image-row img {
-		display: inline-block;
-		margin-right: 10px;
-		vertical-align: top;
-	  }
-	  
-	  .image-row img:last-child {
-		margin-right: 0;
-	  }
-
-	  .image-container {
-		display: flex;
-		flex-wrap: wrap;
-	  }
-	  
-	  .image-item {
-		display: flex;
-		align-items: center;
-		width: 25px; 
-		margin: 40px; 
-		box-sizing: border-box;
-	  }
-	  
-	  .image-item img {
-		width: 60px;
-		height: 60px; 
-		margin-right: 10px; 
-	  }
-	  
-	  .description {
-		text-align: left;
-		font-weight: bold;
-		font-family: "Montserrat", sans-serif;
-	  }
-
-	  .raz{
-		list-style: none;
-	  }
-
-	  .contr {
-		display: flex;
-		justify-content: space-between;
-		gap: 20px; 
-		max-width: 1760px;
-		width: 100%;
-		margin: 0 auto;
-		padding: 0 10px;
+		.image-row img:last-child {
+		  margin-right: 0;
+		}
+  
+		.image-container {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
 		
+		.image-item {
+		  display: flex;
+		  align-items: center;
+		  width: 25px; 
+		  margin: 40px; 
+		  box-sizing: border-box;
+		}
+		
+		.image-item img {
+		  width: 60px;
+		  height: 60px; 
+		  margin-right: 10px; 
+		}
+		
+		.description {
+		  text-align: left;
+		  font-weight: bold;
+		  font-family: var(--main-font);
+		}
+  
+		.raz{
+		  list-style: none;
+		}
+  
+		.contr {
+		  display: flex;
+		  justify-content: space-between;
+		  gap: 20px; 
+		  max-width: 1760px;
+		  width: 100%;
+		  margin: 0 auto;
+		  padding: var(--padding-container);
+		  
+		}
+		
+		.left-column, .right-column {
+		  width: 45%;
+		  box-sizing: border-box; 
+		}
+		
+		.raz {
+		  list-style: none;
+		  padding: 0;
+		  display: flex;
+		  flex-direction: column;
+		  gap: 20px;
+		}
+		
+		.image-item {
+		  display: flex;
+		  align-items: center;
+		  gap: 10px;
+		}
+		
+		.image-item img {
+		  width: 50px;
+		  height: 50px;
+		}
+  
+		.texss {
+		  text-align: center;
+		}
+  
+		.cont2{
+		  max-width: 1760px;
+		  width: 100%;
+		  margin: 0 auto;
+		  padding: 0;
+	  }
+	  .back {
+		  padding-top: 175px;
+		  min-height: 895px;
+		  background-image: url(../img/fon.png);
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	  }
+  
+	  .registration-form {
+		  background-color: var(--white);
+		  padding: 30px;
+		  border-radius: 10px;
+		  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		  text-align: center; 
+		  margin: 50px auto;
+		  max-width: 400px; 
 	  }
 	  
-	  .left-column, .right-column {
-		width: 45%;
-		box-sizing: border-box; 
+	  .registration-form h2 {
+		  margin-bottom: 20px;
+		  color: #333;
 	  }
 	  
-	  .raz {
-		list-style: none;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
+	  .form-group {
+		  margin-bottom: 15px;
 	  }
 	  
-	  .image-item {
-		display: flex;
-		align-items: center;
-		gap: 10px;
+	  .form-group label {
+		  display: block; 
+		  margin-bottom: 5px;
+		  color: #555;
 	  }
 	  
-	  .image-item img {
-		width: 50px;
-		height: 50px;
+	  .form-group input,
+	  .form-group textarea {
+		  width: 100%;
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  box-sizing: border-box;
 	  }
-
-	  .texss{
-		text-align: center;
+	  
+	  .form-group textarea {
+		  height: 100px;
+		  resize: vertical;
 	  }
-
-	  .cont2{
-		max-width: 1760px;
-		width: 100%;
-		margin: 0 auto;
-		padding: 0 0px;
-	}
-	.back {
-		padding-top: 175px;
-		min-height: 895px;
-		background-image: url(../img/fon.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.registration-form {
-		background-color: white;
-		padding: 30px;
-		border-radius: 10px;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		text-align: center; 
-		margin: 50px auto;
-		max-width: 400px; 
-	}
-	
-	.registration-form h2 {
-		margin-bottom: 20px;
-		color: #333;
-	}
-	
-	.form-group {
-		margin-bottom: 15px;
-	}
-	
-	.form-group label {
-		display: block; 
-		margin-bottom: 5px;
-		color: #555;
-	}
-	
-	.form-group input,
-	.form-group textarea {
-		width: 100%;
-		padding: 10px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		box-sizing: border-box;
-	}
-	
-	.form-group textarea {
-		height: 100px;
-		resize: vertical;
-	}
-	
-	.error-message {
-		color: red;
-		font-size: 12px;
-		margin-top: 5px;
-		display: none; 
-	}
-	
-	
-	.registration-form button[type="submit"] {
-		background-color: #7E3AF2;
-		color: white;
-		padding: 12px 20px;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		width: 100%;
-		font-weight: bold;
-	}
-	
-	.registration-form button[type="submit"]:hover {
-		opacity: 0.8;
-	}
-	
-	.form-group input:invalid + .error-message {
-	  display: block;
-	}
+	  
+	  .error-message {
+		  color: red;
+		  font-size: 12px;
+		  margin-top: 5px;
+		  display: none; 
+	  }
+	  
+	  
+	  .registration-form button[type="button"] {
+		  background-color: var(--primary-color);
+		  color: var(--white);
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  width: 100%;
+		  font-weight: bold;
+	  }
+	  
+	  .registration-form button[type="submit"]:hover {
+		  opacity: 0.8;
+	  }
+	  
+	  .form-group input:invalid + .error-message {
+		display: block;
+	  }
+  
 	.right-column .image-item::after {
-		content: "2020-2024"; 
-		display: inline-block;
-		margin-left: 10px; 
-		color: #888; 
-		font-size: 14px; 
-		font-style: italic; 
-	  }
-	  
-	  .right-column .image-item:nth-child(1)::after {
-		content: "2024-сейчас";
-	  }
-	  
-	  .right-column .image-item:nth-child(2)::after {
-		content: "2013-2024";
-	  }
-	  
-	  .right-column .image-item:nth-child(3)::after {
-		content: "2017-2024";
-	  }
+		  content: "2020-2024";
+		  display: inline-block;
+		  margin-left: 10px;
+		  color: #888;
+		  font-size: 14px;
+		  font-style: italic;
+		}
+   .footer {
+	padding: 20px 0;
+	background: #f0f0f0;
+  }
+  
+  .footer .container {
+	text-align: center;
+  }
+  .blast:hover {
+    color:#7E3AF2;
+    font-size: 20px;
+}
+
+.modal {
+	display: none; /* Скрыто по умолчанию */
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 500px;
+  }
+  
+  .modal-buttons {
+	  display: flex;
+	  justify-content: flex-end;
+	  gap: 10px;
+	  margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+	  padding: 10px 15px;
+	  cursor: pointer;
+	  background-color: #7E3AF2;
+	  border: none;
+	  color: #fff;
+	  border-radius: 5px;
+  }
+  .modal-buttons button:hover{
+	  background-color: #217dbb;
+  }
+  
+  .error-message {
+	  color: red;
+	  font-size: 12px;
+	  display: none;
+  }
