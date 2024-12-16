@@ -316,14 +316,14 @@
 		display: block;
 	  }
   
-	.right-column .image-item::after {
-		  content: "2020-2024";
-		  display: inline-block;
-		  margin-left: 10px;
-		  color: #888;
-		  font-size: 14px;
-		  font-style: italic;
-		}
+	  .right-column .image-item::after {
+		content: attr(data-date);
+		display: inline-block;
+		margin-left: 10px;
+		color: #888;
+		font-size: 14px;
+		font-style: italic;
+   }
    .footer {
 	padding: 20px 0;
 	background: #f0f0f0;
