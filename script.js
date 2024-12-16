@@ -107,10 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
          
      submitButton.addEventListener('click', function(event){
           console.log('Submit button clicked');
-          if(!emailInput.value.trim()){
+           if(!emailInput.value.trim()){
              console.log('Email is empty'); 
              errorMessage.style.display = 'block';
-           } else {
+             errorMessage.textContent = 'Пожалуйста, заполните это поле';
+           } else if (!emailInput.value.includes('@')) {
+                console.log('Email does not contain @');
+                errorMessage.style.display = 'block';
+                 errorMessage.textContent = 'Пожалуйста, введите корректный email';
+            } else {
               console.log('Email is not empty');
               errorMessage.style.display = 'none';
               modal.style.display = 'flex';
@@ -177,7 +182,12 @@ document.addEventListener('DOMContentLoaded', function() {
         emailInput.addEventListener('input', function () {
              if (emailInput.value.trim() === '') {
                  emailError.style.display = 'block';
-             } else {
+                 emailError.textContent = 'Пожалуйста, заполните это поле';
+             } else if (!emailInput.value.includes('@')) {
+                  emailError.style.display = 'block';
+                emailError.textContent = 'Пожалуйста, введите корректный email';
+             }
+             else {
                   emailError.style.display = 'none';
              }
          });
@@ -188,7 +198,11 @@ document.addEventListener('DOMContentLoaded', function() {
            const email = emailInput.value.trim();
            if(email === ''){
              emailError.style.display = 'block';
-           }else{
+              emailError.textContent = 'Пожалуйста, заполните это поле';
+           }else if (!emailInput.value.includes('@')) {
+              emailError.style.display = 'block';
+              emailError.textContent = 'Пожалуйста, введите корректный email';
+           } else {
               modal.style.display = 'none';
              alert('Форма отправлена!');
            }
