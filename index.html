@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>CrimeaDigitaL</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="container2">
+                <a href="#" onclick="location.reload()">
+                    <img src="/img/Logo.png" alt="Логотип" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="location.reload();">Главная</a></li>
+                        <li><a href="#about-me">Обо мне</a></li>
+                        <li><a href="#registration-form-section">Регистрация</a></li>
+                      </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <div class="container">
+            <h1>Привет, я Саша</h1>
+            <img src="/img/Line 1.png" alt="Декоративная линия">
+            <p>Я студент первого курса в Севастопольском Государственном Университете.</p>
+            <button id="reg-button">Регистрация</button>
+        </div>
+    </div>
+    <main>
+        <section class="about-me" id="about-me">
+            <div class="container">
+                <h1 class="page2">Обо мне</h1>
+            </div>
+            <div class="container3">
+                <img src="/img/Ellipse.png" alt="Эллипс" class="Ellipse">
+                <p class="opis">Литвинюк Александр - студент первого курса, института ИИТ. Программа: Программная инженерия: Цифровые технологии в аграрном деле</p>
+            </div>
+            <button class="Dalee" id="dalee-button">Далее</button>
+        </section>
+
+        <section class="interests">
+            <div class="container">
+                <h2 class="texss">Интересы и хобби</h2>
+                <div class="contr">
+                    <ul class="raz left-column">
+                        <li class="image-item">
+                            <img src="/img/icon.png" alt="Изображение 1">
+                            <span class="description">Trap/Lyric</span>
+                        </li>
+                        <li class="image-item">
+                            <img src="/img/icon3.png" alt="Изображение 2">
+                            <span class="description">Винсент Ван Гог</span>
+                        </li>
+                        <li class="image-item">
+                            <img src="/img/icon2.png" alt="Изображение 3">
+                            <span class="description">Portraits</span>
+                        </li>
+                    </ul>
+                    <ul class="raz right-column">
+                        <li class="image-item" data-date="2024-сейчас">
+                            <span class="description">Студент первого курса</span>
+                        </li>
+                        <li class="image-item" data-date="2013-2024">
+                           <span class="description">Школьные мероприятия</span>
+                         </li>
+                        <li class="image-item" data-date="2015-2020">
+                            <span class="description">Танцор</span>
+                         </li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <section id="registration-form-section">
+            <div class="back" id="registration-form-section">
+                <div class="cont2">
+                    <div class="registration-form">
+                        <h2>Расскажите о себе на нашем сайте!</h2>
+                        <form id="registration-form" action="" >
+                            <div class="form-group">
+                                <label for="name">Полное имя *</label>
+                                <input type="text" id="name" placeholder="Имя Фамилия">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваша почта *</label>
+                                <input type="email" id="email" placeholder="example@email.com">
+                                <span class="error-message" id="email-error">Пожалуйста, заполните это поле</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Расскажите о себе</label>
+                                <textarea id="description" placeholder="Ваш текст"></textarea>
+                            </div>
+                            <button type="button" id="form-submit" >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+              <p>Вы точно хотите отправить?</p>
+              <div class="modal-buttons">
+                <button id="confirmButton">Подтвердить</button>
+                <button id="cancelButton">Отмена</button>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><span class="blast">© </span><span class="blast">2024 </span><span class="blast">LAlexS</span>
+        </div>
+    </footer>
+</body>
+</html>
